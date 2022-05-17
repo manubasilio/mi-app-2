@@ -1,0 +1,15 @@
+.navbar {
+    float: left;
+    width: 100%;
+    border-bottom: #ccc;
+    color: black;
+    background-color: yellow;
+}
+
+.logoImg {
+    width: 150px;
+}
+
+.logoImg img {
+    width: 100%;
+}
