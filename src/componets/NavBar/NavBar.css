@@ -1,15 +1,45 @@
 .navbar {
     float: left;
     width: 100%;
-    border-bottom: #ccc;
-    color: black;
-    background-color: yellow;
+    border-bottom: red;
+    display: flex;
+    justify-content: space-evenly;
+}
+.container-logo {
+    width: 100px;
+}
+.container-logo img {
+    width: 60%;
+}
+.header-primary {
+    background: black !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid black;
+}
+.header-primary .navbar li {
+    margin-right: 10px;
+}
+.header-primary .navbar .navbar__btn {
+    font-family: 'Lato', sans-serif;
+    text-transform: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
+.header-primary .navbar .navbar__btn:hover {
+    font-weight: 600;
 }
 
-.logoImg {
-    width: 150px;
+.header-primary .navbar .navbar__btn:hover:before {
+    width: 85%;
 }
 
-.logoImg img {
-    width: 100%;
+.header-primary .navbar .navbar__btn:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    transition: width 0.3s ease;
+    height: 1px;
+    background: yellow;
+    bottom: 5px;
 }

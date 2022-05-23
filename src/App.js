@@ -1,6 +1,8 @@
 import './App.css';
 import './test.css';
-import NavBar from './componets/NavBar/NavBar.js';
+import NavBar from './componets/NavBar/NavBar';
+import CardList from'./componets/CardList/CardList'
+
 
 
 function App() {
@@ -9,8 +11,12 @@ function App() {
   return (
 
     <div className="App">
+
       <NavBar />
-      Contenido del App
+      <div className='general-container'>
+        <CardList title={'Nirnava'} />
+        
+      </div>
     </div>
   );
 }

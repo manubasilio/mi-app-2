@@ -1,39 +1,41 @@
 import './NavBar.css'
 import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
+import CartWidget from '../CartWidget/CartWidget'
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
+
+
 
 const NavBar = () => {
 
     return (
-        <Box sx={{ flexGrow: 1 }}>
-          <AppBar position="static">
+        <AppBar position="static" className='header-primary'>
             <Toolbar>
-                <div className='logoImg'>
-                <img src='./logo192.png'></img>
+                <div className='container-logo'>
+                    <img src="./cd.png" />
                 </div>
-                <ul class= 'navbar'>
-                    <li>
-                        <button>Home</button>
-                    </li>
-                    <li>
-                        <button>Productos</button>
-                    </li>
-                    <li>
-                        <button>Contacto</button>
-                    </li>
-                    <li>
-                        <button>Preguntas</button>
-                    </li>
+                <ul className='navbar'>
+                    <p>
+                        <Button disableRipple style={{ backgroundColor: 'transparent' }} variant='text' className='navbar__btn'>Inicio</Button>
+                    </p>
+                    <p>
+                        <Button disableRipple style={{ backgroundColor: 'transparent' }} variant='text' className='navbar__btn'>Productos</Button>
+                    </p>
+                    <p>
+                        <Button disableRipple style={{ backgroundColor: 'transparent' }} variant='text' className='navbar__btn'>Preguntas Frecuentes</Button>
+                    </p>
+                    <p>
+                        <Button disableRipple style={{ backgroundColor: 'transparent' }} variant='text' className='navbar__btn'>Contacto</Button>
+                    </p>
+                    <CartWidget />
+
                 </ul>
-              <Button color="inherit">Login</Button>
             </Toolbar>
-          </AppBar>
-        </Box>
-      );
-    }
 
+        </AppBar>
+    )
 
+}
 
 export default NavBar
