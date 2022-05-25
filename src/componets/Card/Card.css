@@ -19,3 +19,15 @@
     font-size: 16px;
 }
 
+.count-item {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.modal-img {
+    width: 70%;
+}

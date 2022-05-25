@@ -1,27 +1,24 @@
 import './Card.css'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import { Button } from '@mui/material';
-import { useState } from 'react';
 import ItemCount from '../ItemCount/ItemCount';
 
 const CardItem = ({ image, title, price }) => {
 
-
     return (
 
-        <Card sx={{ minWidth: 275 }}>
+        <Card sx={{ minWidth: 275 }} className='card-item-container'>
             <CardContent>
                 <div className='card-item'>
-                    <div><img src={`./${image}`} /></div>
+                    <div>
+                        <img src={`./${image}`} alt={"producto"} />
+                    </div>
                     <p>{title}</p>
                     <span>$ {price}</span>
-                    <ItemCount/>
-                    <Button variant={"contained"} color="error" >Comprar</Button>
                 </div>
-                
-            </CardContent>
-        </Card>
+                <div><ItemCount/></div>
+            </CardContent >
+        </Card >
     )
 }
 
