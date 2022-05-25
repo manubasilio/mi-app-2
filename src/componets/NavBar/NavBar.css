@@ -38,8 +38,8 @@
     content: "";
     position: absolute;
     width: 0;
-    transition: width 0.3s ease;
-    height: 1px;
+    transition: width 0.4s ease;
+    height: 2px;
     background: yellow;
     bottom: 5px;
 }

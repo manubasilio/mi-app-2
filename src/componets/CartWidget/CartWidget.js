@@ -6,7 +6,9 @@ import Button from '@mui/material/Button';
 const CartWidget = () => {
 
     return (     
-            <Button disableRipple style={{ backgroundColor: 'transparent' }} variant='text' className='navbar__btn'><ShoppingCartTwoToneIcon className='color'/></Button>
+            <Button disableRipple style={{ backgroundColor: 'transparent' }} variant='text' className='navbar__btn'>
+                <ShoppingCartTwoToneIcon className='color'/>
+                </Button>
             )
 }
 
