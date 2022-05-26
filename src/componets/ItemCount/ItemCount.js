@@ -4,6 +4,7 @@ import Modal from '../Modal/Modal';
 
 
 
+
 const ItemCount = () => {
     const [open, setOpen] = useState(false)
     const [count, setCount] = useState(0)
@@ -13,7 +14,9 @@ const ItemCount = () => {
     }
 
     const addCount = () => {
+        if(count < 5) {
         setCount(count + 1)
+        }
     }
 
     const removeCount = () => {
@@ -23,9 +26,9 @@ const ItemCount = () => {
     return (
         <div>
             <div className='count-item'>
-                <Button color="error" onClick={removeCount} disabled={count == 0}>-</Button>
+                <Button color="error" onClick={removeCount} disabled={count === 0}>-</Button>
                 <p>{count}</p>
-                <Button color="error" onClick={addCount}>+</Button>
+                <Button color="error" onClick={addCount} disabled={count === 5}>+</Button>
             </div>
             <Button color="error" variant={"contained"} onClick={() => setOpen(true)}>Detalle</Button>
             <div>

@@ -5,6 +5,7 @@
 .card-item {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .card-item p {
@@ -31,3 +32,5 @@
 .modal-img {
     width: 70%;
 }
+
+

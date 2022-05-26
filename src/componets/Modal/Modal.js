@@ -7,6 +7,8 @@ import DialogContent from '@mui/material/DialogContent';
 
 
 const Modal = ({handleClose, open, children}) => {
+
+    
     return(
         <Dialog className='modal-style' onClose={handleClose} open={open}>
             <DialogContent>
