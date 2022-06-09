@@ -34,12 +34,12 @@ const productos = [
 ]
 
 const producto = {
-    title: 'Nevermind',
-    price: 1059,
-    image: 'nevermind.jpg',
-    description: 'Nirvana - Nevermind',
+    title: 'Bleach',
+    price: 3500,
+    image: 'bleach.jpg',
+    description: 'Nirvana - Bleach',
     stock: 5,
-    id: 1,
+    id: 3,
 }
 
 
