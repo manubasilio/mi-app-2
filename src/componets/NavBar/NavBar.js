@@ -1,4 +1,5 @@
 import './NavBar.css'
+import { Link } from 'react-router-dom'
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
@@ -17,16 +18,40 @@ const NavBar = () => {
                 </div>
                 <ul className='navbar'>
                     <p>
-                        <Button disableRipple style={{ backgroundColor: 'transparent' }} variant='text' className='navbar__btn'>Inicio</Button>
+                        <Button
+                            disableRipple
+                            style={{ backgroundColor: 'transparent' }}
+                            variant='text'
+                            className='navbar__btn'>
+                            <Link to="/inicio">Inicio</Link>
+                        </Button>
                     </p>
                     <p>
-                        <Button disableRipple style={{ backgroundColor: 'transparent' }} variant='text' className='navbar__btn'>Productos</Button>
+                        <Button
+                            disableRipple
+                            style={{ backgroundColor: 'transparent' }}
+                            variant='text'
+                            className='navbar__btn'>
+                            <Link to="/productos">Productos</Link>
+                        </Button>
                     </p>
                     <p>
-                        <Button disableRipple style={{ backgroundColor: 'transparent' }} variant='text' className='navbar__btn'>Preguntas Frecuentes</Button>
+                        <Button
+                            disableRipple
+                            style={{ backgroundColor: 'transparent' }}
+                            variant='text'
+                            className='navbar__btn'>
+                            <Link to="/preguntas">Preguntas frecutes</Link>
+                        </Button>
                     </p>
                     <p>
-                        <Button disableRipple style={{ backgroundColor: 'transparent' }} variant='text' className='navbar__btn'>Contacto</Button>
+                        <Button
+                            disableRipple
+                            style={{ backgroundColor: 'transparent' }}
+                            variant='text'
+                            className='navbar__btn'>
+                            <Link to="/contacto">Contacto</Link>
+                        </Button>
                     </p>
                     <CartWidget />
 
