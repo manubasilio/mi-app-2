@@ -3,7 +3,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import ItemCount from '../ItemCount/ItemCount';
 
-const CardItem = ({ image, title, price, }) => {
+const CardItem = ({ image, title, price, stock}) => {
 
     return (
 
@@ -16,7 +16,7 @@ const CardItem = ({ image, title, price, }) => {
                     <p>{title}</p>
                     <span>$ {price}</span>
                 </div>
-                <div><ItemCount/></div>
+                <div><ItemCount stock = {stock} /></div>
             </CardContent >
         </Card >
     )

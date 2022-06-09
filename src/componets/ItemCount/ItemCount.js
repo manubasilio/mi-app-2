@@ -2,9 +2,6 @@ import { useState } from 'react';
 import { Button } from '@mui/material';
 import Modal from '../Modal/Modal';
 
-
-
-
 const ItemCount = () => {
     const [open, setOpen] = useState(false)
     const [count, setCount] = useState(0)

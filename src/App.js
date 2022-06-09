@@ -1,15 +1,25 @@
 import './App.css';
 import './test.css';
 import NavBar from './componets/NavBar/NavBar';
-import { useState } from 'react';
-import ItemList from './componets/ItemList/ItemList';
+import { useEffect, useState, } from 'react';
+import ItemList from './componets/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './componets/ItemDetailContainer/ItemDetailContainer';
 
 
-function App() {
-  const [open, setOpen] = useState(false)
-  const handleClose = () => {
-    setOpen(false)
 
+function App() {{
+
+useEffect( () => {
+fetch('https://jsonplaceholder.typicode.com/users', )
+.then((response) => {
+  return response.json()
+})
+.then( (res) => {
+  console.log("Respuesta: ", res)
+})
+},[])
+
+    
  }
   return (
     <div className="App">
@@ -17,6 +27,7 @@ function App() {
       <div className='general-container'>
         <ItemList title={'Nirnava'} />
       </div>
+      <ItemDetailContainer/>
     </div>
   );
 }
